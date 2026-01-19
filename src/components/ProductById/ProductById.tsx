@@ -22,7 +22,7 @@ const ProductById: FC = () => {
                     <div className="product__bottom">
                         <div className="product__bottom-left">
                             <Swiper pagination={true} modules={[Pagination]} className="product__bottom-left-swiper">
-                                {data.images.map((img) => ( <SwiperSlide key={img}> <img src={img} alt="" className="product__bottom-left-swiper-slide"/></SwiperSlide> ))}
+                                {data.images.map((img: string) => ( <SwiperSlide key={img}> <img src={img} alt="" className="product__bottom-left-swiper-slide"/></SwiperSlide> ))}
                             </Swiper>
                         </div>
                         <div className="product__bottom-right">
