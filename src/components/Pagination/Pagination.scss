@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0;
+    .disabled {
+        display: none;
+    }
+    li {
+        &.selected {
+            a {
+                background-color: #2e7d32;
+                color: #ffffff;
+                border-color: #2e7d32;
+            }
+        }
+        a {
+            min-width: 36px;
+            height: 36px;
+            padding: 0 10px;
+            border-radius: 8px;
+            border: 1px solid #c8e6c9;
+            color: #2e7d32;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            &:hover {
+                background-color: #e8f5e9;
+            }
+        }
+    }
+}
